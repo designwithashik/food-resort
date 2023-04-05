@@ -23,7 +23,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/menu',
-        element: <Menu />
+        element: <Menu />,
+        loader: ()=>fetch('https://www.themealdb.com/api/json/v1/1/filter.php?a=Japanese')
   
       },
       {
